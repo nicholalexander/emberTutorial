@@ -1,15 +1,18 @@
-<h1> Welcome to Super Rentals </h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
 
-We hope you find exactly what you're looking for in a place to stay.
+      <h1> Welcome to Super Rentals </h1>
 
-{{#each model as |rental-unit|}}
-  {{rental-listing rental=rental-unit}}
-{{/each}}
+      <p>We hope you find exactly what you're looking for in a place to stay.</p>
 
+      {{#each model as |rental-unit|}}
+        {{rental-listing rental=rental-unit}}
+      {{/each}}
 
+      <p>{{#link-to 'about'}}About{{/link-to}}</p>
+      <p>{{#link-to 'contact'}}Click here to contact us.{{/link-to}}</p>
 
-
-
-
-{{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+    </div>
+  </div>
+</div>
